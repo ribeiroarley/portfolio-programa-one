@@ -1,0 +1,346 @@
+/* ===== SEÇÃO ESTILOS GERAIS ===== */
+body {
+    background-color: #F5F6F5; /* Cor de fundo principal */
+    color: #333333; /* Cor do texto principal */
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove paddings padrão */
+}
+
+/* ===== SEÇÃO CABEÇALHO ===== */
+header {
+    background-image: url('img/BG_ONE_ZOOM_PT_(3)[1].png'); /* Imagem de fundo */
+    background-size: cover; /* Cobrir toda a área */
+    background-position: top center; /* Posicionamento da imagem */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    padding: 40px 20px; /* Espaçamento interno */
+    border-bottom: 3px solid #66BB6A; /* Borda inferior */
+    text-align: center; /* Alinhamento centralizado */
+}
+
+/* Imagem de perfil */
+header img {
+    border: 5px solid #333333; /* Borda da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+/* Texto de introdução */
+header .lead {
+    font-size: 24px; /* Tamanho do texto */
+    color: #FFFFFF; /* Cor do texto */
+    margin-bottom: 15px; /* Espaço abaixo */
+    text-shadow: 2px 2px 3px #333333; /* Sombra do texto */
+}
+
+/* Título principal */
+header h1 {
+    font-size: 32px; /* Tamanho do título */
+    color: #FFFFFF; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço abaixo */
+    text-shadow: 2px 2px 3px #333333; /* Sombra do texto */
+}
+
+/* Parágrafo de descrição */
+header p {
+    font-size: 16px; /* Tamanho do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    max-width: 800px; /* Largura máxima */
+    margin: 0 auto 20px auto; /* Centraliza e adiciona espaço abaixo */
+    color: #E0E0E0; /* Cor do texto */
+    text-shadow: 1px 1px 2px #333333; /* Sombra do texto */
+}
+
+/* Container dos badges de habilidades */
+.skills-container {
+    display: flex; /* Layout flexível */
+    flex-wrap: wrap; /* Quebra de linha quando necessário */
+    justify-content: center; /* Centraliza os itens */
+    gap: 10px; /* Espaço entre os itens */
+    margin-top: 20px; /* Espaço acima */
+}
+
+/* Estilo dos badges */
+header .badge {
+    background-color: #444; /* Cor de fundo */
+    padding: 8px 15px; /* Espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas */
+    display: inline-flex; /* Exibição em linha com flex */
+    align-items: center; /* Alinhamento vertical */
+    transition: all 0.3s ease; /* Transição suave */
+    font-size: 14px; /* Tamanho do texto */
+}
+
+/* Ícones dentro dos badges */
+header .badge i {
+    margin-right: 8px; /* Espaço à direita do ícone */
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+/* Efeito hover nos badges */
+header .badge:hover {
+    background-color: #FFEE58; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra */
+    transform: scale(1.05); /* Efeito de escala */
+    color: #333; /* Cor do texto */
+}
+
+/* ===== SEÇÃO DO BADGE DECORATIVO ===== */
+.badge-section {
+    background-color: #f8f9fa; /* Fundo claro para destacar o badge */
+    position: relative; /* Permite posicionamento absoluto dos elementos filhos */
+    z-index: 1; /* Garante que fique acima do fundo do header */
+    margin-top: -20px; /* Sobreposição sutil com o header */
+}
+
+.decorative-badge {
+    width: 150px; /* Tamanho adequado para destaque */
+    height: auto; /* Mantém a proporção */
+    transition: all 0.3s ease; /* Suaviza as animações */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); /* Sombra sutil */
+}
+
+/* Efeito hover para interatividade */
+.decorative-badge:hover {
+    transform: scale(1.1) rotate(5deg); /* Efeito de crescimento e rotação */
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3)); /* Sombra mais intensa */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .decorative-badge {
+        width: 120px; /* Tamanho menor em mobile */
+    }
+    
+    .badge-section {
+        margin-top: -10px; /* Ajuste fino da sobreposição */
+    }
+}
+
+/* ===== SEÇÃO CONTEÚDO PRINCIPAL ===== */
+main {
+    padding: 40px 20px; /* Espaçamento interno */
+}
+
+/* Título da seção */
+main h2 {
+    color: #336791; /* Cor do texto */
+    font-size: 28px; /* Tamanho do texto */
+    margin-bottom: 30px; /* Espaço abaixo */
+    text-align: center; /* Alinhamento centralizado */
+}
+
+/* Estilo dos cards */
+.card {
+    border: none; /* Remove borda padrão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 30px; /* Espaço abaixo */
+    background-color: #FFFFFF; /* Cor de fundo */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* Efeito hover nos cards */
+.card:hover {
+    transform: translateY(-5px); /* Move o card para cima */
+}
+
+/* Imagem no topo do card */
+.card-img-top {
+    border-bottom: 3px solid #FFD43B; /* Borda inferior */
+}
+
+/* Corpo do card */
+.card-body {
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Título do card */
+.card-title {
+    color: #00758F; /* Cor do texto */
+    font-size: 20px; /* Tamanho do texto */
+    margin-bottom: 15px; /* Espaço abaixo */
+}
+
+/* Texto do card */
+.card-text {
+    color: #333333; /* Cor do texto */
+    font-size: 14px; /* Tamanho do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* Botão de link no card */
+.btn-link {
+    color: #F80000; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    padding: 0; /* Remove padding */
+}
+
+/* Efeito hover no botão */
+.btn-link:hover {
+    color: #3776AB; /* Cor do texto ao passar o mouse */
+}
+
+/* ===== SEÇÃO MODAIS ===== */
+.modal-content {
+    border: 2px solid #336791; /* Borda */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Cabeçalho do modal */
+.modal-header {
+    background-color: #F80000; /* Cor de fundo */
+    color: #FFFFFF; /* Cor do texto */
+    border-bottom: none; /* Remove borda inferior */
+    padding: 15px 20px; /* Espaçamento interno */
+}
+
+/* Título do modal */
+.modal-title {
+    font-size: 20px; /* Tamanho do texto */
+}
+
+/* Corpo do modal */
+.modal-body {
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Subtítulos no modal */
+.modal-body h6 {
+    color: #00758F; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    margin-bottom: 10px; /* Espaço abaixo */
+}
+
+/* Lista no modal */
+.modal-body ul {
+    list-style-type: disc; /* Estilo da lista */
+    margin-left: 20px; /* Recuo */
+    color: #333333; /* Cor do texto */
+}
+
+/* Itens da lista */
+.modal-body li {
+    margin-bottom: 8px; /* Espaço abaixo */
+    font-size: 14px; /* Tamanho do texto */
+}
+
+/* Imagem no modal */
+.modal-body img {
+    border: 3px solid #FFD43B; /* Borda */
+    margin-top: 15px; /* Espaço acima */
+}
+
+/* Rodapé do modal */
+.modal-footer {
+    border-top: none; /* Remove borda superior */
+    padding: 15px 20px; /* Espaçamento interno */
+}
+
+/* Link no rodapé do modal */
+.modal-footer a {
+    color: #3776AB; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Efeito hover no link */
+.modal-footer a:hover {
+    color: #F29111; /* Cor do texto ao passar o mouse */
+}
+
+/* ===== SEÇÃO RODAPÉ ===== */
+footer {
+    background-image: url('img/BG_ONE_ZOOM_PT_(1)[1].png'); /* Imagem de fundo */
+    background-size: cover; /* Cobrir toda a área */
+    background-position: top center; /* Posicionamento da imagem */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    color: #FFFFFF; /* Cor do texto */
+    padding: 40px 20px; /* Espaçamento interno */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Direção em coluna */
+    align-items: center; /* Alinhamento centralizado */
+    justify-content: center; /* Alinhamento vertical */
+}
+
+/* Título do rodapé */
+footer h2 {
+    font-size: 24px; /* Tamanho do texto */
+    margin-bottom: 20px; /* Espaço abaixo */
+    text-align: center; /* Alinhamento centralizado */
+    text-shadow: 1px 1px 2px #333333; /* Sombra do texto */
+}
+
+/* Container dos links sociais */
+footer .d-flex {
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza os itens */
+    gap: 30px; /* Espaço entre os itens */
+    margin-bottom: 20px; /* Espaço abaixo */
+}
+
+/* Links sociais */
+footer a {
+    color: #FFD43B; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 18px; /* Tamanho do texto */
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    text-shadow: 1px 1px 2px #333333; /* Sombra do texto */
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito hover nos links */
+footer a:hover {
+    color: #F80000; /* Cor do texto ao passar o mouse */
+}
+
+/* Ícones nos links */
+footer i {
+    margin-right: 8px; /* Espaço à direita */
+    font-size: 20px; /* Tamanho do ícone */
+}
+
+/* Texto de copyright */
+footer p {
+    font-size: 14px; /* Tamanho do texto */
+    margin: 0; /* Remove margens */
+    text-align: center; /* Alinhamento centralizado */
+    text-shadow: 1px 1px 2px #333333; /* Sombra do texto */
+}
+
+/* ===== SEÇÃO RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    /* Ajustes para telas menores */
+    header .lead {
+        font-size: 20px; /* Reduz tamanho do texto */
+    }
+    
+    header h1 {
+        font-size: 24px; /* Reduz tamanho do título */
+    }
+    
+    .skills-container {
+        gap: 8px; /* Reduz espaço entre badges */
+    }
+    
+    header .badge {
+        padding: 6px 12px; /* Ajusta padding */
+        font-size: 12px; /* Reduz tamanho do texto */
+    }
+    
+    header .badge i {
+        font-size: 14px; /* Reduz tamanho do ícone */
+    }
+    
+    main h2 {
+        font-size: 22px; /* Reduz tamanho do título */
+    }
+    
+    footer h2 {
+        font-size: 20px; /* Reduz tamanho do título */
+    }
+    
+    footer a {
+        font-size: 16px; /* Reduz tamanho do texto */
+    }
+}
